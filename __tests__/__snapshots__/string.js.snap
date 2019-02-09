@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`string() should generate a validator for string values with options {"pattern": /^[0-9]{3}$/} and value  123  1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/^[0-9]{3}$/\`. The value was \` 123 \`."`;
+
+exports[`string() should generate a validator for string values with options {"pattern": /Hello TravelPerk/} and value Hello world 1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/Hello TravelPerk/\`. The value was \`Hello world\`."`;
+
+exports[`string() should generate a validator for string values with options {"pattern": /Hello World/} and value Hello world 1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/Hello World/\`. The value was \`Hello world\`."`;
+
+exports[`string() should generate a validator for string values with options {} and value {} 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`string() should generate a validator for string values with options {} and value 1 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`string() should generate a validator for string values with options {} and value null 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`string() should generate a validator for string values with options {} and value true 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`string() should generate a validator for string values with options {} and value undefined 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;

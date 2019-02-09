@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`email() should generate a validator for string values with options {} and value  1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/^[a-z0-9!#$%&'*+\\\\/=?^_\`{|}~.-]+@[a-z0-9-]+(\\\\.[a-z0-9-]+)*$/i\`. The value was \`\`."`;
+
+exports[`email() should generate a validator for string values with options {} and value {} 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`email() should generate a validator for string values with options {} and value 1 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`email() should generate a validator for string values with options {} and value Hello world 1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/^[a-z0-9!#$%&'*+\\\\/=?^_\`{|}~.-]+@[a-z0-9-]+(\\\\.[a-z0-9-]+)*$/i\`. The value was \`Hello world\`."`;
+
+exports[`email() should generate a validator for string values with options {} and value a 1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/^[a-z0-9!#$%&'*+\\\\/=?^_\`{|}~.-]+@[a-z0-9-]+(\\\\.[a-z0-9-]+)*$/i\`. The value was \`a\`."`;
+
+exports[`email() should generate a validator for string values with options {} and value hello@ 1`] = `"[TKType] Property \`value\` of \`Component\` doesn't match the pattern \`/^[a-z0-9!#$%&'*+\\\\/=?^_\`{|}~.-]+@[a-z0-9-]+(\\\\.[a-z0-9-]+)*$/i\`. The value was \`hello@\`."`;
+
+exports[`email() should generate a validator for string values with options {} and value null 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`email() should generate a validator for string values with options {} and value true 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;
+
+exports[`email() should generate a validator for string values with options {} and value undefined 1`] = `"[TKType] Property \`value\` of \`Component\` is not a string."`;

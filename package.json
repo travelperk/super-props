@@ -4,7 +4,9 @@
   "description": "Nothing to see here.",
   "private": false,
   "main": "dist/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "randexp": "0.5.3"
+  },
   "devDependencies": {
     "@babel/cli": "7.2.3",
     "@babel/core": "7.2.2",
