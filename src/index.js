@@ -1,1 +1,1 @@
-console.log("Nothing here for the moment");
+export { default as boolean } from "./boolean";
