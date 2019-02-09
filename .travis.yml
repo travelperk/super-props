@@ -9,16 +9,16 @@ node_js:
   - '10'
   - '9'
   - '8'
-after_success:
-  - npm run build
 jobs:
   include:
     - stage: release
+      script: npm run build
       deploy:
         provider: script
         skip_cleanup: true
         script:
           - npx semantic-release
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+stages:
+  - test
+  - name: release
+    if: branch = master
