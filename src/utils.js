@@ -2,7 +2,7 @@ export function error(message) {
   return new Error(`[TKType] ${message}`);
 }
 
-function randomNumber({ min = -100, max = 100, integer = true } = {}) {
+export function randomNumber({ min = -100, max = 100, integer = true } = {}) {
   const number = Math.random() * (max - min + 1) + min;
   return integer ? Math.floor(number) : number;
 }
