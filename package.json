@@ -1,7 +1,7 @@
 {
   "name": "@travelperksl/super-props",
   "version": "0.0.0-development",
-  "description": "Nothing to see here",
+  "description": "Nothing to see here.",
   "private": false,
   "main": "dist/index.js",
   "dependencies": {},
