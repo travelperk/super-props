@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`object() make() should generate a validator for objects values with shape {"id": [Function type], "isAdmin": [Function type]}, options undefined and value {"id": 1} 1`] = `"[TKType] Property \`isAdmin\` of \`Component.value\` is not a boolean."`;
+
+exports[`object() make() should generate a validator for objects values with shape {"id": [Function type]}, options undefined and value {"id": 1.5} 1`] = `"[TKType] Property \`id\` of \`Component.value\` is not an integer."`;
+
+exports[`object() make() should generate a validator for objects values with shape {}, options {"nullable": false} and value null 1`] = `"[TKType] Property \`value\` of \`Component\` is not an object."`;
+
+exports[`object() make() should generate a validator for objects values with shape {}, options {"nullable": false} and value undefined 1`] = `"[TKType] Property \`value\` of \`Component\` is not an object."`;
+
+exports[`object() make() should generate a validator for objects values with shape {}, options undefined and value 1 1`] = `"[TKType] Property \`value\` of \`Component\` is not an object."`;
+
+exports[`object() make() should generate a validator for objects values with shape {}, options undefined and value hello 1`] = `"[TKType] Property \`value\` of \`Component\` is not an object."`;
+
+exports[`object() make() should generate a validator for objects values with shape {}, options undefined and value true 1`] = `"[TKType] Property \`value\` of \`Component\` is not an object."`;
