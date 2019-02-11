@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`array() should generate a validator for arrays with value [], shape [Function type] and options {"allowEmpty": false} 1`] = `"[Super Props] Property \`value\` of \`Component\` can't be an empty array."`;
+
+exports[`array() should generate a validator for arrays with value [1, "bar"], shape [Function type] and options {} 1`] = `"[Super Props] Property \`1\` of \`Component[]\` is supposed to be one of \`number(), foo\`."`;
+
+exports[`array() should generate a validator for arrays with value [1, "foo"], shape [Function type] and options {} 1`] = `"[Super Props] Property \`1\` of \`Component[]\` is not a number."`;
+
+exports[`array() should generate a validator for arrays with value [1, 1], shape [Function type] and options {"unique": true} 1`] = `"[Super Props] Property \`value\` of \`Component\` has repeated values."`;
+
+exports[`array() should generate a validator for arrays with value [1, 2, 3], shape [Function type] and options {"maxLength": 2} 1`] = `"[Super Props] Property \`value\` of \`Component\` can't be longer than 2."`;
+
+exports[`array() should generate a validator for arrays with value [1], shape [Function type] and options {"minLength": 2} 1`] = `"[Super Props] Property \`value\` of \`Component\` can't be shorter than 2."`;
+
+exports[`array() should generate a validator for arrays with value null, shape [Function type] and options {} 1`] = `"[Super Props] Property \`value\` of \`Component\` is not an array."`;
+
+exports[`array() should generate a validator for arrays with value undefined, shape [Function type] and options {} 1`] = `"[Super Props] Property \`value\` of \`Component\` is not an array."`;

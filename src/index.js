@@ -7,4 +7,5 @@ export { default as object } from "./object";
 export { default as literal } from "./literal";
 export { default as oneOf } from "./oneOf";
 export { default as fn } from "./fn";
+export { default as array } from "./array";
 export { default as thrower } from "./thrower";
