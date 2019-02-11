@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`boolean() should generate a validator for boolean values: Property \`value\` of \`Component\` is not a boolean. 1`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;
+exports[`boolean() should generate a validator for boolean values 1`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;
 
-exports[`boolean() should generate a validator for boolean values: Property \`value\` of \`Component\` is not a boolean. 2`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;
+exports[`boolean() should generate a validator for boolean values 2`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;
 
-exports[`boolean() should generate a validator for boolean values: Property \`value\` of \`Component\` is not a boolean. 3`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;
+exports[`boolean() should generate a validator for boolean values 3`] = `"[Super Props] Property \`value\` of \`Component\` is not a boolean."`;

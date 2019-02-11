@@ -23,9 +23,7 @@ describe("boolean()", () => {
         boolean({ nullable })({ value }, "value", "Component")
       );
       shouldThrow
-        ? expectation.toThrowErrorMatchingSnapshot(
-            "Property `value` of `Component` is not a boolean."
-          )
+        ? expectation.toThrowErrorMatchingSnapshot()
         : expectation.not.toThrow();
     }
   );
