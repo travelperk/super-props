@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`integer() should generate a validator for integer values with options {"max": -1} 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is supposed to be smaller than -1. It was 0."`;
+exports[`integer() should generate a validator for integer values with options {"max": -1} 1`] = `"[Super Props] Property \`value\` of \`Component\` is supposed to be smaller than -1. It was 0."`;
 
-exports[`integer() should generate a validator for integer values with options {"max": 2, "min": 1} 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is supposed to be bigger than 1. It was 0."`;
+exports[`integer() should generate a validator for integer values with options {"max": 2, "min": 1} 1`] = `"[Super Props] Property \`value\` of \`Component\` is supposed to be bigger than 1. It was 0."`;
 
-exports[`integer() should generate a validator for integer values with options {"min": 1} 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is supposed to be bigger than 1. It was 0."`;
+exports[`integer() should generate a validator for integer values with options {"min": 1} 1`] = `"[Super Props] Property \`value\` of \`Component\` is supposed to be bigger than 1. It was 0."`;
 
-exports[`integer() should generate a validator for integer values with options {"nullable": false} 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is not a number."`;
+exports[`integer() should generate a validator for integer values with options {"nullable": false} 1`] = `"[Super Props] Property \`value\` of \`Component\` is not a number."`;
 
-exports[`integer() should generate a validator for integer values with options {"nullable": false} 2`] = `"[Super Props Type] Property \`value\` of \`Component\` is not a number."`;
+exports[`integer() should generate a validator for integer values with options {"nullable": false} 2`] = `"[Super Props] Property \`value\` of \`Component\` is not a number."`;
 
-exports[`integer() should generate a validator for integer values with options {} 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is not an integer."`;
+exports[`integer() should generate a validator for integer values with options {} 1`] = `"[Super Props] Property \`value\` of \`Component\` is not an integer."`;
 
-exports[`integer() should generate a validator for integer values with options {} 2`] = `"[Super Props Type] Property \`value\` of \`Component\` is not a number."`;
+exports[`integer() should generate a validator for integer values with options {} 2`] = `"[Super Props] Property \`value\` of \`Component\` is not a number."`;

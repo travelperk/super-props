@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`oneOf() should generate a validator for oneOf with value 1.1, choices ["foo", "bar", [Function type]] and options undefined 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is supposed to be one of \`foo, bar, integer()\`."`;
+exports[`oneOf() should generate a validator for oneOf with value 1.1, choices ["foo", "bar", [Function type]] and options undefined 1`] = `"[Super Props] Property \`value\` of \`Component\` is supposed to be one of \`foo, bar, integer()\`."`;
 
-exports[`oneOf() should generate a validator for oneOf with value baz, choices ["foo", "bar"] and options undefined 1`] = `"[Super Props Type] Property \`value\` of \`Component\` is supposed to be one of \`foo, bar\`."`;
+exports[`oneOf() should generate a validator for oneOf with value baz, choices ["foo", "bar"] and options undefined 1`] = `"[Super Props] Property \`value\` of \`Component\` is supposed to be one of \`foo, bar\`."`;
 
-exports[`oneOf() should generate a validator for oneOf with value null, choices ["foo"] and options undefined 1`] = `"[Super Props Type] Property \`value\` of \`Component\` can't be null or undefined."`;
+exports[`oneOf() should generate a validator for oneOf with value null, choices ["foo"] and options undefined 1`] = `"[Super Props] Property \`value\` of \`Component\` can't be null or undefined."`;
 
-exports[`oneOf() should generate a validator for oneOf with value undefined, choices ["foo"] and options undefined 1`] = `"[Super Props Type] Property \`value\` of \`Component\` can't be null or undefined."`;
+exports[`oneOf() should generate a validator for oneOf with value undefined, choices ["foo"] and options undefined 1`] = `"[Super Props] Property \`value\` of \`Component\` can't be null or undefined."`;

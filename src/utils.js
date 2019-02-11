@@ -1,4 +1,4 @@
-export const TOKEN = "[Super Props Type]";
+export const TOKEN = "[Super Props]";
 
 export function error(message) {
   return new Error(`${TOKEN} ${message}`);
