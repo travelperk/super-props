@@ -23,8 +23,9 @@ describe("object()", () => {
       ${{ id: 1 }}                                                          | ${{ id: integer(), isAdmin: boolean() }}                                                   | ${undefined}           | ${true}
       ${{ id: 1 }}                                                          | ${{ id: integer(), isAdmin: boolean({ nullable: true }) }}                                 | ${undefined}           | ${false}
       ${{ id: 1, isAdmin: true }}                                           | ${{ id: integer(), isAdmin: boolean({ nullable: true }) }}                                 | ${undefined}           | ${false}
-      ${{ id: 1, isAdmin: true }}                                           | ${{ id: integer(), isAdmin: literal(true) }}                                               | ${undefined}           | ${false}
       ${{ id: 1, isAdmin: true, name: "Max", email: "max@travelperk.com" }} | ${{ id: integer(), isAdmin: boolean({ nullable: true }), name: string(), email: email() }} | ${undefined}           | ${false}
+      ${{ id: 1, isAdmin: true }}                                           | ${{ id: integer() }}                                                                       | ${undefined}           | ${true}
+      ${{ id: 1, isAdmin: true }}                                           | ${{ id: integer() }}                                                                       | ${{ exact: false }}    | ${false}
       ${undefined}                                                          | ${{}}                                                                                      | ${{ nullable: true }}  | ${false}
       ${undefined}                                                          | ${{}}                                                                                      | ${{ nullable: false }} | ${true}
       ${null}                                                               | ${{}}                                                                                      | ${{ nullable: true }}  | ${false}
