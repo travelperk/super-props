@@ -6,3 +6,4 @@ export { default as email } from "./email";
 export { default as object } from "./object";
 export { default as literal } from "./literal";
 export { default as oneOf } from "./oneOf";
+export { default as thrower } from "./thrower";
