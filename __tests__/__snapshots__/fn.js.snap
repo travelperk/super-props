@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`fn() should generate a validator for function values 1`] = `"[Super Props] Property \`value\` of \`Component\` is not a function."`;
+
+exports[`fn() should generate a validator for function values 2`] = `"[Super Props] Property \`value\` of \`Component\` is not a function."`;
+
+exports[`fn() should generate a validator for function values 3`] = `"[Super Props] Property \`value\` of \`Component\` is not a function."`;

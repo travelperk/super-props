@@ -1,26 +1,19 @@
-import { boolean } from "../src";
+import { fn } from "../src";
 
-describe("boolean()", () => {
-  describe(".make()", () => {
-    it("should generate a random boolean value", () => {
-      expect(typeof boolean().make()).toBe("boolean");
-    });
-  });
-
+describe("fn()", () => {
   it.each`
     value        | nullable | shouldThrow
-    ${true}      | ${true}  | ${false}
-    ${false}     | ${true}  | ${false}
+    ${() => {}}  | ${true}  | ${false}
     ${undefined} | ${false} | ${true}
     ${undefined} | ${true}  | ${false}
     ${null}      | ${false} | ${true}
     ${null}      | ${true}  | ${false}
     ${1}         | ${true}  | ${true}
   `(
-    "should generate a validator for boolean values",
+    "should generate a validator for function values",
     ({ value, nullable, shouldThrow }) => {
       const expectation = expect(() =>
-        boolean({ nullable })({ value }, "value", "Component")
+        fn({ nullable })({ value }, "value", "Component")
       );
       shouldThrow
         ? expectation.toThrowErrorMatchingSnapshot()

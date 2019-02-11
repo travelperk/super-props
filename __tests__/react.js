@@ -8,7 +8,8 @@ import {
   string,
   email,
   object,
-  literal
+  literal,
+  fn
 } from "../src";
 
 let errorSpy;
@@ -47,6 +48,7 @@ test.each`
   ${object({ id: number(), email: email() }, { exact: false })} | ${{ id: 1, email: "foo@bar.com", name: "John" }} | ${false}
   ${object({ id: number(), admin: literal(true) })}             | ${{ id: 1, admin: true }}                        | ${false}
   ${object({ id: number(), admin: literal(true) })}             | ${{ id: 1, admin: false }}                       | ${true}
+  ${fn()}                                                       | ${() => {}}                                      | ${false}
 `(
   "a component that expects a property $type and receives value $value should throw: $shouldThrow",
   ({ type, value, shouldThrow }) => {
