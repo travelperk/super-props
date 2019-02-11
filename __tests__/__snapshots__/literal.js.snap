@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`literal() should validate the passed value "foo" 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value "foo" 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value "foo" 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value "foo" 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value "foo" 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value "foo" 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`foo\` but was \`1.2\`."`;
+
+exports[`literal() should validate the passed value 1 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value 1 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value 1 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value 1 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value 1 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value 1 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1\` but was \`1.2\`."`;
+
+exports[`literal() should validate the passed value 1.2 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value 1.2 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value 1.2 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value 1.2 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value 1.2 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value 1.2 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`1.2\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value false 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value false 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value false 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value false 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value false 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value false 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`false\` but was \`1.2\`."`;
+
+exports[`literal() should validate the passed value null 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value null 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value null 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value null 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value null 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value null 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`null\` but was \`1.2\`."`;
+
+exports[`literal() should validate the passed value true 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value true 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value true 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`undefined\`."`;
+
+exports[`literal() should validate the passed value true 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value true 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value true 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`true\` but was \`1.2\`."`;
+
+exports[`literal() should validate the passed value undefined 1`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`true\`."`;
+
+exports[`literal() should validate the passed value undefined 2`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`false\`."`;
+
+exports[`literal() should validate the passed value undefined 3`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`null\`."`;
+
+exports[`literal() should validate the passed value undefined 4`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`foo\`."`;
+
+exports[`literal() should validate the passed value undefined 5`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`1\`."`;
+
+exports[`literal() should validate the passed value undefined 6`] = `"[TKType] Property \`testValue.\` of \`Component\` was supposed to be \`undefined\` but was \`1.2\`."`;
