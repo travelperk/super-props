@@ -1,5 +1,7 @@
+export const TOKEN = "[Super Props Type]";
+
 export function error(message) {
-  return new Error(`[TKType] ${message}`);
+  return new Error(`${TOKEN} ${message}`);
 }
 
 export function randomNumber({ min = -100, max = 100, integer = true } = {}) {
