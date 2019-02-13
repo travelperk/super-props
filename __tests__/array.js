@@ -1,7 +1,15 @@
 import { array, string, number, oneOf } from "../src";
 
 describe("array()", () => {
-  describe("make()", () => {});
+  describe("make()", () => {
+    it("should generate an array of the given element", () => {
+      const generatedArray = array(number(), {
+        minLength: 2,
+        maxLength: 2
+      }).make();
+      expect(generatedArray).toHaveLength(2);
+    });
+  });
 
   it.each`
     value         | shape                          | options                  | shouldThrow

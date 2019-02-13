@@ -1,5 +1,6 @@
 import React from "react";
 import { render, cleanup } from "react-testing-library";
+import PropTypes from "prop-types";
 import {
   thrower,
   number,
@@ -9,12 +10,15 @@ import {
   email,
   object,
   literal,
-  fn
+  fn,
+  array,
+  node
 } from "../src";
 
 let errorSpy;
 beforeEach(() => {
   errorSpy = jest.spyOn(console, "error").mockImplementation();
+  PropTypes.resetWarningCache();
 });
 afterEach(() => {
   errorSpy.mockRestore();
@@ -49,18 +53,16 @@ test.each`
   ${object({ id: number(), admin: literal(true) })}             | ${{ id: 1, admin: true }}                        | ${false}
   ${object({ id: number(), admin: literal(true) })}             | ${{ id: 1, admin: false }}                       | ${true}
   ${fn()}                                                       | ${() => {}}                                      | ${false}
+  ${node()}                                                     | ${<div />}                                       | ${false}
+  ${node()}                                                     | ${undefined}                                     | ${true}
+  ${array(number())}                                            | ${[1]}                                           | ${false}
+  ${array(number())}                                            | ${["foo"]}                                       | ${true}
 `(
   "a component that expects a property $type and receives value $value should throw: $shouldThrow",
   ({ type, value, shouldThrow }) => {
     const Foo = function() {
       return null;
     };
-    // Prop-types stops running on a component after the first error
-    // this is to avoid flooding the console with errors.
-    // in this case we want to reuse the component and get all the errors
-    // setting a random displayName tricks prop-types in thinking
-    // the components is new
-    Foo.displayName = Math.random();
     Foo.propTypes = { value: type };
 
     const { rerender } = render(React.createElement(Foo, { value }));
