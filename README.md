@@ -6,7 +6,7 @@
     height="80"
     width="80"
     alt="man superhero"
-    src="https://raw.githubusercontent.com/travelperk/super-props/master/website/static/img/logo.png"
+    src="https://raw.githubusercontent.com/travelperk/super-props/master/website/static/img/logo.png" />
 </a>
 
 <p>Advanced PropTypes for React</p>
