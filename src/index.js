@@ -8,4 +8,5 @@ export { default as literal } from "./literal";
 export { default as oneOf } from "./oneOf";
 export { default as fn } from "./fn";
 export { default as array } from "./array";
+export { default as node } from "./node";
 export { default as thrower } from "./thrower";
