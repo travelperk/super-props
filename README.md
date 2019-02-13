@@ -3,8 +3,8 @@
 
 <a href="https://www.emojione.com/emoji/1f9b8-2642">
   <img
-    height="80"
-    width="80"
+    height="128"
+    width="128"
     alt="man superhero"
     src="https://raw.githubusercontent.com/travelperk/super-props/master/website/static/img/logo.png" />
 </a>
