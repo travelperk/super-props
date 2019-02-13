@@ -22,7 +22,7 @@ const users = [
 
 const siteConfig = {
   title: "Super Props", // Title for your website.
-  tagline: "Nothing to see here",
+  tagline: "Advanced PropTypes for React",
   url: "https://travelperk.github.io", // Your website URL
   baseUrl: "/super-props/", // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -37,24 +37,19 @@ const siteConfig = {
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
-  headerLinks: [
-    { doc: "doc1", label: "Docs" },
-    { doc: "doc4", label: "API" },
-    { page: "help", label: "Help" },
-    { blog: true, label: "Blog" }
-  ],
+  headerLinks: [{ doc: "getting-started", label: "Docs" }],
 
   // If you have users set above, you add it here:
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/docusaurus.svg",
-  footerIcon: "img/docusaurus.svg",
-  favicon: "img/favicon.png",
+  headerIcon: "img/logo.png",
+  footerIcon: "img/logo.png",
+  favicon: "img/logo.png",
 
   /* Colors for website */
   colors: {
-    primaryColor: "#2E8555",
+    primaryColor: "#F44336",
     secondaryColor: "#205C3B"
   },
 
@@ -86,11 +81,7 @@ const siteConfig = {
   // On page navigation for the current documentation page.
   onPageNav: "separate",
   // No .html extensions for paths.
-  cleanUrl: true,
-
-  // Open Graph and Twitter card images.
-  ogImage: "img/docusaurus.png",
-  twitterImage: "img/docusaurus.png"
+  cleanUrl: true
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
