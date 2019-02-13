@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting Started · Super Props</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Super Props is a library that allows you to define advanced &lt;code&gt;propTypes&lt;/code&gt; for your React components. At the same time&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Getting Started · Super Props"/><meta property="og:type" content="website"/><meta property="og:url" content="https://travelperk.github.io/super-props/index.html"/><meta property="og:description" content="&lt;p&gt;Super Props is a library that allows you to define advanced &lt;code&gt;propTypes&lt;/code&gt; for your React components. At the same time&lt;/p&gt;
+"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/super-props/img/logo.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/super-props/css/main.css"/><script src="/super-props/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/super-props/"><img class="logo" src="/super-props/img/logo.png" alt="Super Props"/><h2 class="headerTitleWithLogo">Super Props</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive siteNavItemActive"><a href="/super-props/docs/getting-started" target="_self">Docs</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Introduction</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem navListItemActive"><a class="navItem" href="/super-props/docs/getting-started">Getting Started</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Getting Started</h1></header><article><div><span><p>Super Props is a library that allows you to define advanced <code>propTypes</code> for your React components. At the same time
+it makes easy to generate fake data for testing.</p>
+<h2><a class="anchor" aria-hidden="true" id="installation"></a><a href="#installation" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
+<p>To install Super Props simply run:</p>
+<pre><code class="hljs css language-bash">npm install @travelperksl/super-props
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="define-types"></a><a href="#define-types" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Define Types</h2>
+<p>Super Props comes with a set of pre-built types you can use.</p>
+<p>Suppose you have a React component like this one:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">HotelStars</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">const</span> { count } = props;
+
+  <span class="hljs-keyword">if</span> (count === <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">"This hotel has only 1 star"</span>;
+  <span class="hljs-keyword">if</span> (count &lt; <span class="hljs-number">5</span>) <span class="hljs-keyword">return</span> <span class="hljs-string">`This hotel has <span class="hljs-subst">${count}</span> stars`</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-string">"Hey, this is a FIVE stars hotel!"</span>;
+}
+</code></pre>
+<p>We want <code>HotelStars</code> to accept a <code>count</code> prop which is a number. We can do that with PropTypes:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-keyword">import</span> PropType <span class="hljs-keyword">from</span> <span class="hljs-string">"prop-types"</span>;
+
+HotelStars.propTypes = { <span class="hljs-attr">count</span>: PropTypes.number.isRequired };
+</code></pre>
+<p>This works but we have other requirements. <code>count</code> can't be just any number, it must be an integer between 1 and 5.
+We could write a custom PropType, or we could check the value in the component's body. These methods both work
+but Super Props has an easier solution:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-keyword">import</span> { integer } <span class="hljs-keyword">from</span> <span class="hljs-string">"prop-types"</span>;
+
+HotelStars.propTypes = { <span class="hljs-attr">count</span>: integer({ <span class="hljs-attr">min</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">max</span>: <span class="hljs-number">5</span> }) };
+</code></pre>
+<p>Here we're checking that <code>count</code> is an integer between 1 and 5 and that it's defined. If a some point we pass to
+<code>HotelStars</code> something that doesn't comply to these requirements an error will be thrown (more on this later).</p>
+<h2><a class="anchor" aria-hidden="true" id="reusing-types"></a><a href="#reusing-types" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reusing Types</h2>
+<p>In some cases you might want to use a type more than once. Consider this example:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Avatar</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{props.user.image}</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">""</span> /&gt;</span>;
+}
+
+function Salutation(props) {
+  return (
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      Welcome back {props.user.fullName}, you have {props.messagesCount}{" "}
+      messages.
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  );
+}
+</span></code></pre>
+<p>Both <code>Avatar</code> and <code>Salutation</code> need to receive a <code>user</code> prop. It doesn't make sense to define it twice.
+We can instead create it once and reuse it:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-keyword">import</span> { object, string, integer, email } <span class="hljs-keyword">from</span> <span class="hljs-string">"@travelperksl/super-props"</span>;
+
+<span class="hljs-keyword">const</span> User = object({
+  <span class="hljs-attr">image</span>: string(),
+  <span class="hljs-attr">fullName</span>: string(),
+  <span class="hljs-attr">email</span>: email()
+});
+
+Avatar.propTypes = { <span class="hljs-attr">user</span>: User };
+
+Salutation.propTypes = {
+  <span class="hljs-attr">user</span>: User,
+  <span class="hljs-attr">messagesCount</span>: integer({ <span class="hljs-attr">min</span>: <span class="hljs-number">0</span> })
+};
+</code></pre>
+<p>Of course, <code>User</code> can then be used as a normal type, for example to define a <code>Company</code>:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-keyword">const</span> Company = object({
+  <span class="hljs-attr">name</span>: string(),
+  <span class="hljs-attr">adminUser</span>: User
+});
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="generate-test-data"></a><a href="#generate-test-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Generate Test Data</h2>
+<p>Since we have our types defined it makes sense to use them to generate some fake data for our tests:</p>
+<pre><code class="hljs css language-jsx">render(<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Avatar</span> <span class="hljs-attr">user</span>=<span class="hljs-string">{User.make()}</span> /&gt;</span>);
+</span></code></pre>
+<p>Most types support the <code>.make()</code> method to generate some fake data.</p>
+<h2><a class="anchor" aria-hidden="true" id="throw-on-validation-errors"></a><a href="#throw-on-validation-errors" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Throw On Validation Errors</h2>
+<p>When you pass a prop that doesn't pass the validation the default behavior is to log it in the console.
+This behavior is not good most of the time, what you really want is for the application to throw an error both
+in your local environment and in your tests.</p>
+<p>You can do that using <code>thrower</code>:</p>
+<pre><code class="hljs css language-jsx"><span class="hljs-comment">// Put this in your index.js</span>
+<span class="hljs-keyword">import</span> { thrower } <span class="hljs-keyword">from</span> <span class="hljs-string">"@travelperksl/super-props"</span>;
+
+thrower(process.env.NODE_ENV !== <span class="hljs-string">"production"</span>);
+</code></pre>
+<p><code>thrower</code> will intercept any error sent to <code>console.error</code> and if it comes from Super Props it will throw an error.
+It accepts one boolean parameter to know when to activate. PropTypes don't run in production already but just
+to be safe you should disable <code>thrower</code> too.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#installation">Installation</a></li><li><a href="#define-types">Define Types</a></li><li><a href="#reusing-types">Reusing Types</a></li><li><a href="#generate-test-data">Generate Test Data</a></li><li><a href="#throw-on-validation-errors">Throw On Validation Errors</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 TravelPerk</section></footer></div></body></html>
