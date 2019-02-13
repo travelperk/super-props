@@ -5,15 +5,20 @@
     "previous": "Previous",
     "tagline": "Advanced PropTypes for React",
     "docs": {
+      "api": {
+        "title": "API"
+      },
       "getting-started": {
         "title": "Getting Started"
       }
     },
     "links": {
-      "Docs": "Docs"
+      "Docs": "Docs",
+      "API": "API"
     },
     "categories": {
-      "Introduction": "Introduction"
+      "Introduction": "Introduction",
+      "API": "API"
     }
   },
   "pages-strings": {

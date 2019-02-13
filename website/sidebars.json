@@ -2,6 +2,9 @@
   "docs": {
     "Introduction": [
       "getting-started"
+    ],
+    "API": [
+      "api"
     ]
   }
 }
