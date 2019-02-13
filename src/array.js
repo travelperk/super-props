@@ -1,4 +1,5 @@
 import { error } from "./utils";
+import { randomNumber } from "./utils";
 
 export default function array(
   shape,
@@ -43,6 +44,22 @@ export default function array(
         `Property \`${propName}\` of \`${componentName}\` has repeated values.`
       );
   }
+
+  type.toString = function() {
+    return `array(${shape})`;
+  };
+
+  type.make = function() {
+    const length = randomNumber({
+      min: minLength,
+      max: maxLength === Infinity ? 10 : maxLength,
+      integer: true
+    });
+
+    return Array(length)
+      .fill()
+      .map(() => shape.make());
+  };
 
   return type;
 }

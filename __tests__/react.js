@@ -11,6 +11,7 @@ import {
   object,
   literal,
   fn,
+  array,
   node
 } from "../src";
 
@@ -54,6 +55,8 @@ test.each`
   ${fn()}                                                       | ${() => {}}                                      | ${false}
   ${node()}                                                     | ${<div />}                                       | ${false}
   ${node()}                                                     | ${undefined}                                     | ${true}
+  ${array(number())}                                            | ${[1]}                                           | ${false}
+  ${array(number())}                                            | ${["foo"]}                                       | ${true}
 `(
   "a component that expects a property $type and receives value $value should throw: $shouldThrow",
   ({ type, value, shouldThrow }) => {
