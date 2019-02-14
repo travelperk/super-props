@@ -56,10 +56,20 @@ export default function array(
       integer: true
     });
 
-    return Array(length)
-      .fill()
-      .map(() => shape.make());
+    const generatedArray = [];
+    for (let i = 0; i < length; i++) {
+      let element;
+      do {
+        element = shape.make();
+      } while (unique && isElementInArray(element, generatedArray));
+      generatedArray.push(element);
+    }
+    return generatedArray;
   };
 
   return type;
+}
+
+function isElementInArray(element, array) {
+  return array.some(e => e === element);
 }
