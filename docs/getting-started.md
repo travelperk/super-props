@@ -14,7 +14,7 @@ To install Super Props simply run:
 npm install @travelperksl/super-props
 ```
 
-## Define Types
+## Defining Types
 
 Super Props comes with a set of pre-built types you can use.
 
@@ -99,7 +99,7 @@ const Company = object({
 });
 ```
 
-## Generate Test Data
+## Generating Test Data
 
 Since we have our types defined it makes sense to use them to generate some fake data for our tests:
 
@@ -109,7 +109,7 @@ render(<Avatar user={User.make()} />);
 
 Most types support the `.make()` method to generate some fake data.
 
-## Throw On Validation Errors
+## Throwing Errors On Validation Errors
 
 When you pass a prop that doesn't pass the validation the default behavior is to log it in the console.
 This behavior is not good most of the time, what you really want is for the application to throw an error both
