@@ -215,6 +215,17 @@ const User = object({ id: Id, company: Company, email: email() });
 
 Returns a random object matching the `shape`. Each element is generated calling their `make` method.
 
+### `object(shape, [options]).extend(shape)`
+
+Takes the first shape and extends it with additional properties. Useful when you want to create specialized types
+from more generic ones:
+
+```jsx
+const Person = object({ name: string() });
+const User = Person.extend({ isAdmin: boolean(), email: email() });
+const Admin = User.extend({ isAdmin: literal(true) });
+```
+
 ## `fn([options])`
 
 Returns a validator that checks if the given prop is a function. It's not possible to verify the received parameters
